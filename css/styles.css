@@ -4,13 +4,17 @@
 }
 
 .container {
+    font-family: 'Nunito', sans-serif;
     font-size: .9em;
+    background: rgba(191,191,191, 0.3);
+    border-radius: 25px;
     width: 92%;
     margin: 0 auto;
 }
 
+
 nav {
-    background-color: #30303e;
+    background-color: #470024;
     width: 100%;
     margin: 0 auto;
     padding-top: 25px;
@@ -27,7 +31,7 @@ header, footer {
 
 .heading-style {
     color: #30303e;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -56,7 +60,7 @@ header hr:before {
 
 fieldset {
     border: none;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 label {
@@ -74,14 +78,14 @@ input, label, .form-label {
 }
 
 input, select, textarea {
-    background-color: #f2f2f3;
+    background-color: white;
     border-radius: 3px;
     border-width: 0;
     text-indent: 1em;
     width: 100%;
     margin: 0 auto;
     border: 2px solid rgba(0,0,0,0);
-    transition: all .2s ease;
+    transition: all .4s ease;
 }
 
 textarea {
@@ -108,6 +112,7 @@ input[id="zip"] {
 input:focus, select:focus, textarea:focus {
     outline: none;
     border: 2px solid #141462;
+    background-color: #ffff8e; 
 }
 
 input::placeholder {
@@ -136,7 +141,7 @@ fieldset:last-of-type label[for]:not(:nth-last-child(2)) {
     height: 55px;
     font-size: 1.4em;
     color: #fff;
-    background-color: #66b2b2;
+    background-color: #564787;
 }
 
 footer {
