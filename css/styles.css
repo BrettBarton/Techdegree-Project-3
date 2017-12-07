@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    font-size: .9em;
+    width: 92%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #30303e;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+header, footer {
+    text-align: center;
+}
+
+.heading-style {
+    color: #30303e;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+header p {
+    color: #97979e;
+    width: 80%;
+    margin: 0 auto;
+}
+
+hr {
+    position: relative;
+    border: none;
+    border-bottom: medium solid #30303e;
+    margin-top: 30px;
+}
+
+header hr:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    bottom: 3px;
+    left: 0px;
+    right: 0px;
+    border-bottom: thick solid #30303e;
+}
+
+fieldset {
+    border: none;
+    margin-top: 20px;
+}
+
+label {
+    transition: all 1s ease-in-out;
+}
+
+label, .form-label {
+    color: #595964;
+    margin: 10px auto;
+    font-size: 1.2em;
+}
+
+input, label, .form-label {
+    display: block;
+}
+
+input, select, textarea {
+    background-color: #f2f2f3;
+    border-radius: 3px;
+    border-width: 0;
+    text-indent: 1em;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid rgba(0,0,0,0);
+    transition: all .2s ease;
+}
+
+textarea {
+    height: 80px;
+    margin: 15px auto;
+}
+
+form input, textarea {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+select {
+    height: 40px;
+}
+
+input[id="zip"] {
+    width: 150px;
+    margin-left: 0px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #141462;
+}
+
+input::placeholder {
+    font-weight: 100;
+    font-style: italic;
+}
+
+input[placeholder*="required"]::placeholder {
+    text-indent: calc(100%-85px);
+}
+
+input[type="checkbox"],
+input[type="checkbox"] + label,
+input[type="radio"],
+input[type="radio"] + label {
+    width: auto;
+    display: inline-block;
+    margin: 8px auto;
+}
+
+fieldset:last-of-type label[for]:not(:nth-last-child(2)) {
+    margin-left: 6px;
+}
+
+[type="button"] {
+    height: 55px;
+    font-size: 1.4em;
+    color: #fff;
+    background-color: #66b2b2;
+}
+
+footer {
+    color: #97979e;
+    margin: 30px auto;
+}
+
+/********************************
+MEDIA QUERY
+********************************/
+
+@media (min-width:768px) {
+	.container {
+		width: 699px;
+	}
+	.primary input,
+	.primary label,
+	.primary select,
+	.primary .form-label {
+		display: inline-block;
+		margin: 15px auto;
+	}
+	.primary label,
+	.primary .form-label {
+		width: 30%;
+	}
+	.primary input,
+	.primary select {
+		width: 65%;
+	}
+	#zip {
+		width: 150px;
+	}
+	.secondary h1,
+	.secondary label,
+	.secondary .form-label {
+		margin-top: 30px;
+	}
+
+}
+
